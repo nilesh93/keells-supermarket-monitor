@@ -12,3 +12,5 @@ USER script
 WORKDIR /scripts
 
 COPY . .
+
+CMD ["bash", "notify.sh"]
