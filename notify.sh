@@ -24,6 +24,7 @@ while [ "$i" -ne 0 ]
 do
     for city in "${cities[@]}"
     do
+    echo $(date)
     echo "processing ${city}"
     echo "${city} current status ${status[$city]}"
     RESULT=$(echo "$RESPONSE" | grep "$city")
