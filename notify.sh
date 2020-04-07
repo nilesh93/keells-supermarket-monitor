@@ -21,8 +21,8 @@ curl --header "Content-Type: application/json" \
 
 i=1
 while [ "$i" -ne 0 ]
-RESPONSE=$(curl https://int.keellssuper.net/login)
 do
+    RESPONSE=$(curl https://int.keellssuper.net/login)
     for city in "${cities[@]}"
     do
     echo $(date)
