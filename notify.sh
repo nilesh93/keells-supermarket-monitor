@@ -4,7 +4,7 @@ AVAIL="Available"
 UNAVAIL="Unavailable"
 
 
-RESPONSE=$(curl https://int.keellssuper.net/login)
+
 
 cities=( "Gampaha" "Kurunegala" "Wadduwa" )
 declare -A status
@@ -21,6 +21,7 @@ curl --header "Content-Type: application/json" \
 
 i=1
 while [ "$i" -ne 0 ]
+RESPONSE=$(curl https://int.keellssuper.net/login)
 do
     for city in "${cities[@]}"
     do
